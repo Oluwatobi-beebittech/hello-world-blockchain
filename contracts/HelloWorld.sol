@@ -2,7 +2,6 @@
 pragma solidity 0.8.17;
 
 contract HelloWorld {
-
     event UpdatedMessages(string oldString, string newString);
 
     string public message;
@@ -10,6 +9,7 @@ contract HelloWorld {
     constructor(string memory initMessage) {
         message = initMessage;
     }
+
     function update(string memory newMessage) public {
         string memory oldMessage = message;
         message = newMessage;
